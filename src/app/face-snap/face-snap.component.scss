@@ -3,12 +3,15 @@
   padding: .9px;
   border: solid #ecf0f1 11px;
   border-radius: 75px;
-  min-width: 18vw;
-  max-width: 18vw;
-  min-height: 25vw;
-  max-height: 30vw;
+  box-shadow: lightgray 4px 4px 20px;
+
   img{
-    width: 100%;
+    min-width: 16vw;
+    max-width: 16vw;
+    min-height: 18vw;
+    max-height: 18vw;
+    border-top: solid #ecf0f1 2px;
+    border-bottom: solid #ecf0f1 2px;
   }
   h2,h3,p,img{
     text-align: center;
@@ -20,5 +23,17 @@
     background-color: #2ecc71;
     border: solid #ecf0f1 3px;
     border-radius: 75px;
+    box-shadow: lightgray 4px 4px 20px;
+    &:active {
+      transform: translate(2px, 2px);
+    }
+  }
+}
+
+.snapped {
+  background-color: #ff6b81;
+  color: darkolivegreen;
+  button {
+    box-shadow: lightgreen 3px 3px 3px;
   }
 }

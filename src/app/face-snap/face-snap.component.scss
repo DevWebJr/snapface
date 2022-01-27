@@ -3,11 +3,22 @@
   padding: .9px;
   border: solid #ecf0f1 11px;
   border-radius: 75px;
-  width: 35%;
+  min-width: 18vw;
+  max-width: 18vw;
+  min-height: 25vw;
+  max-height: 30vw;
   img{
     width: 100%;
   }
   h2,h3,p,img{
     text-align: center;
+  }
+  button{
+    margin: 0.7vw;
+    color: #ecf0f1;
+    font-size:large;
+    background-color: #2ecc71;
+    border: solid #ecf0f1 3px;
+    border-radius: 75px;
   }
 }

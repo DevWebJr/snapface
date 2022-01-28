@@ -1,21 +1,50 @@
 .face-snap-card{
-  margin: 1.3vw;
-  padding: .9px;
+  margin: 2vw;
+  padding: 0;
   border: solid #ecf0f1 11px;
   border-radius: 75px;
   box-shadow: lightgray 4px 4px 20px;
+  min-width: 16vw;
+  max-width: 16vw;
+  min-height: 38vw;
+  max-height: 38vw;
+
+  .face-snap-card-header{
+    min-height: 8vw;
+    max-height: 8vw;
+  }
+
+  .face-snap-card-body{
+    min-height: 5.5vw;
+    max-height: 5.5vw;
+    border-bottom: #ecf0f1 solid 1px;
+  }
+
+  .face-snap-card-footer{
+    min-height: 5vw;
+    max-height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
 
   img{
     min-width: 16vw;
     max-width: 16vw;
-    min-height: 18vw;
-    max-height: 18vw;
+    min-height: 16vw;
+    max-height: 16vw;
     border-top: solid #ecf0f1 2px;
     border-bottom: solid #ecf0f1 2px;
   }
-  h2,h3,p,img{
+  h2 {
+    padding: 1vw;
+    border-bottom: #ecf0f1 solid 1px;
+  }
+  h2,h3,p{
     text-align: center;
   }
+
   button{
     margin: 0.7vw;
     color: #ecf0f1;

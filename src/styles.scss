@@ -13,6 +13,16 @@ body {
   justify-content: center;
   align-content: center;
   align-items: center;
-  padding: 3vw;
   background-color: #2c3e50;
+}
+button{
+  margin: 0.7vw;
+  color: #ecf0f1;
+  font-size:large;
+  border: solid #ecf0f1 3px;
+  border-radius: 75px;
+  box-shadow: lightgray 4px 4px 20px;
+  &:active {
+    transform: translate(2px, 2px);
+  }
 }

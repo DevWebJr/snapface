@@ -2,6 +2,7 @@
     <div class="face-snap-card-header">
       <h2>{{faceSnap.title | titlecase}}</h2>
       <p><small><i>{{faceSnap.description}}</i></small></p>
+      <button class="details" href="facesnaps/:id'" (click)="onViewFaceSnap()">Détails</button>
     </div>
     <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title" [title]="faceSnap.title">
     <div class="face-snap-card-body">

@@ -1,0 +1,20 @@
+.landing-page-block {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1vw;
+
+  .wallpaper {
+    width: 90vw;
+    height: 35vw;
+    margin: 1vw;
+    border:  solid 1px #ecf0f1;
+  }
+
+  button {
+    background-color: #6a89cc;
+  }
+}
+

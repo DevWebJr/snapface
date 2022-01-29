@@ -1,0 +1,18 @@
+<div class="back">
+  <a routerLink="/facesnaps" title="retour vers la gallerie">&larr;</a>
+</div>
+<div class="face-snap-card" [ngClass]="{'snapped': buttonText ==='Unsnap !'}">
+  <div class="face-snap-card-header">
+    <h2>{{faceSnap.title | titlecase}}</h2>
+    <p><small><i>{{faceSnap.description}}</i></small></p>
+  </div>
+  <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title" [title]="faceSnap.title">
+  <div class="face-snap-card-body">
+    <p><small>{{faceSnap.createdDate | date:'( le d MMMM yyyy, à HH:mm )'}}</small></p>
+    <p *ngIf="faceSnap.location">Originaire de {{faceSnap.location}} </p>
+  </div>
+  <div class="face-snap-card-footer">👏
+    <button (click)="onSnap()" >{{buttonText}}</button>
+    <span>{{faceSnap.snaps}}</span>
+  </div>
+</div>

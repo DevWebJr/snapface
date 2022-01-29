@@ -1,22 +1,25 @@
 .face-snap-card{
-  margin: 2vw;
+  margin: 1.5vw;
   padding: 0;
-  border: solid #ecf0f1 11px;
+  border: solid #ecf0f1 5px;
   border-radius: 75px;
   box-shadow: lightgray 4px 4px 20px;
   min-width: 16vw;
   max-width: 16vw;
-  min-height: 38vw;
-  max-height: 38vw;
+  min-height: 40vw;
+  max-height: 40vw;
 
   .face-snap-card-header{
-    min-height: 8vw;
-    max-height: 8vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 12.5vw;
+    max-height: 12.5vw;
   }
 
   .face-snap-card-body{
-    min-height: 5.5vw;
-    max-height: 5.5vw;
+    min-height: 4.5vw;
+    max-height: 4.5vw;
     border-bottom: #ecf0f1 solid 1px;
   }
 
@@ -45,17 +48,12 @@
     text-align: center;
   }
 
+  .details{
+    background-color: #eb2f06;
+  }
+
   button{
-    margin: 0.7vw;
-    color: #ecf0f1;
-    font-size:large;
     background-color: #2ecc71;
-    border: solid #ecf0f1 3px;
-    border-radius: 75px;
-    box-shadow: lightgray 4px 4px 20px;
-    &:active {
-      transform: translate(2px, 2px);
-    }
   }
 }
 

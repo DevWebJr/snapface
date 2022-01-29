@@ -1,5 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {FaceSnap} from "../models/face-snap.models";
+import {FaceSnapsService} from "../services/face-snaps.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-face-snap',
@@ -13,6 +15,8 @@ export class FaceSnapComponent implements OnInit{
   buttonText!: string;
   unclicked!: boolean;
 
+  constructor(private faceSnapsService: FaceSnapsService,
+              private router: Router) {}
   ngOnInit(){
     this.buttonText = "Snap !";
     this.unclicked = true;
@@ -22,12 +26,17 @@ export class FaceSnapComponent implements OnInit{
     if(this.unclicked) {
       this.unclicked=false;
       this.buttonText = "Unsnap !";
-      this.faceSnap.snaps++;
+      this.faceSnapsService.snapById(this.faceSnap.id, 'snap');
     }
     else{
       this.unclicked=true;
       this.buttonText = "Snap !"
-      this.faceSnap.snaps--;
+      this.faceSnapsService.snapById(this.faceSnap.id, 'unsnap');
+
     }
+  }
+
+  onViewFaceSnap(){
+    this.router.navigateByUrl(`facesnaps/${this.faceSnap.id}`)
   }
 }
